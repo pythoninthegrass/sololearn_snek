@@ -1,9 +1,9 @@
 import re
-word = input()
-# word = r'gl'
 
-# TODO: match 'glass' (anchors?)
-if re.match(word, 'glue'):
+word = input()
+pattern = r'(\w+l\w+)'
+
+if re.match(pattern, word):
     print("Match")
 else:
     print("No match")
