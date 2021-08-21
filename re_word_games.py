@@ -1,7 +1,7 @@
 import re
 
 word = input()
-pattern = r'(\w+l\w+)'
+pattern = r'(gl\w+)'
 
 if re.match(pattern, word):
     print("Match")
