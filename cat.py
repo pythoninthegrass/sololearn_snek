@@ -1,7 +1,5 @@
 def concatenate(*args):
-    res = ""
-    for arg in args:
-        res += " " + arg
-    return res
+    sep = "-"
+    return sep.join(args)
 
 print(concatenate("I", "love", "Python", "!"))
