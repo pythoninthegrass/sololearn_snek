@@ -1,6 +1,6 @@
-# Python Core
+# SoloLearn - Python
 
-Odds and ends
+Collection of SoloLearn [Python Core](https://www.sololearn.com/learning/1073) and [Python Intermediate](https://www.sololearn.com/learning/1158) exercises and projects.
 
 ## TODO
 * Add `poetry`
