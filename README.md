@@ -4,4 +4,3 @@ Collection of SoloLearn [Python Core](https://www.sololearn.com/learning/1073) a
 
 ## TODO
 * Add `poetry`
-* Write a _real_ description
