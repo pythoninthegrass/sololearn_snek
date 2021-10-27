@@ -1,6 +1,6 @@
 import os
 
-fn = fn = os.path.join("../python_core/books.txt")  # "/usercode/files/books.txt"
+fn = os.path.join("../python_core/books.txt")  # "/usercode/files/books.txt"
 
 N = int(input())
 
