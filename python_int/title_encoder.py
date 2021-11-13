@@ -1,4 +1,11 @@
-with open("/mnt/c/Users/wahrh/Documents/code/sololearn_snek/python_core/books.txt", "r") as file:
+from pathlib import Path
+
+# Build paths inside the project like this: base_dir / 'subdir'
+base_dir = Path(__file__).resolve().parent.parent
+cwd = base_dir / 'python_core'
+fn = f"{cwd}/books.txt"
+
+with open(fn, "r") as file:
     raw = file.readlines()
     raw_lst = [line.strip() for line in raw]
     new_lst = []
@@ -15,13 +22,13 @@ with open("/mnt/c/Users/wahrh/Documents/code/sololearn_snek/python_core/books.tx
     for i in new_lst:
         if ' ' in i:
             get_spaces.append(i.split(' '))
-    
+
     eat_the_book = ""
 
     for i in get_spaces[0:1]:
         for a in i:
             eat_the_book += a[0]
-    
+
     final.append(eat_the_book)
 
     eat_another_book = ""
@@ -36,7 +43,7 @@ with open("/mnt/c/Users/wahrh/Documents/code/sololearn_snek/python_core/books.tx
             little_titles.append(item[0])
 
 
-    print(str(little_titles[0])) 
+    print(str(little_titles[0]))
     print(str(little_titles[1]))
     print(eat_the_book)
     print(eat_another_book)
